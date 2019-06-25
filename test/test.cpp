@@ -103,7 +103,7 @@ TEST(stack, assignment) {
     EXPECT_EQ(0, s2.size());
     EXPECT_EQ(true, s2.empty());
 }
-
+/*
 TEST(Stack2Queue, queueOp) {
     Stack2Queue<int> q1;
 
@@ -133,7 +133,7 @@ TEST(Stack2Queue, queueOp) {
     EXPECT_EQ(0, q1.size());
     EXPECT_EQ(true, q1.empty());
 }
-
+*/
 
 
 int main(int argc, char **argv) {
