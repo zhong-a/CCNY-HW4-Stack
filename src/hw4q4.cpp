@@ -23,7 +23,29 @@ void Stack2Queue<Item>::push(const Item& entry) {
     }
 }
 
+template <class Item>
+void Stack2Queue<Item>::pop() {
+    if (s1.empty()) {
+        return;
+    }
+    s1.pop();
+    return;
+}
 
+template <class Item>
+size_t Stack2Queue::size() const {
+    return used;
+}
+
+template <class Item>
+bool Stack2Queue::empty() const {
+    return (used == 0);
+}
+
+template <class Item>
+Item Stack2Queue::front() const {
+    return s1.top();
+}
 
 #endif
 
